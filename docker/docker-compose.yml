@@ -7,6 +7,7 @@ services:
         volumes:
             - 'mongo_user_data:/data'
     node:
+        image: 'docker_node:latest'
         build:
             context: ..
             dockerfile: ./docker/Dockerfile

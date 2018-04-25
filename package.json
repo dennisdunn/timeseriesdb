@@ -7,8 +7,8 @@
         "start": "cd docker && docker-compose up -d --build",
         "stop": "cd docker && docker-compose down",
         "restart": "cd docker && docker-compose down && docker-compose up -d ",
-        "build": "docker build -f ./docker/Dockerfile .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "docker build -f ./docker/Dockerfile -t docker_node:latest .",
+        "test": "mocha ./spec/**/*.js"
     },
     "keywords": [
         "timeseries",
