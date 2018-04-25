@@ -1,7 +1,7 @@
 {
-    "name": "mongodb-timeseries",
+    "name": "timeseriesdb",
     "version": "0.1.0",
-    "description": "A timeseries database using Mongo.",
+    "description": "A simplistic timeseries database using Mongo, Node-red, Mosquitto, and Docker.",
     "main": "src/tsutils.js",
     "scripts": {
         "start": "cd docker && docker-compose up -d --build",
