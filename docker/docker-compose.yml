@@ -7,7 +7,9 @@ services:
         volumes:
             - 'mongo_user_data:/data'
     node:
-        build: .
+        build:
+            context: ..
+            dockerfile: ./docker/Dockerfile
         ports:
             - '1880:1880'
         volumes:
