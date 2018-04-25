@@ -1,0 +1,21 @@
+version: '3'
+services:
+    mongo:
+        image: mongo
+        ports:
+            - '27017:27017'
+        volumes:
+            - 'mongo_user_data:/data'
+    node:
+        build: .
+        ports:
+            - '1880:1880'
+        volumes:
+            - 'node_red_user_data:/data'
+    mqtt:
+        image: ncarlier/mqtt
+        ports:
+            - '1883:1883'
+volumes:
+    mongo_user_data: null
+    node_red_user_data: null
