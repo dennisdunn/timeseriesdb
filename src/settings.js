@@ -203,7 +203,7 @@ module.exports = {
     //    context.global.os
 
     functionGlobalContext: {
-        tsutil: require('./tsutil.js')
+        tsutil: require('/data/tsutil.js')
         // os:require('os'),
         // jfive:require("johnny-five"),
         // j5board:require("johnny-five").Board({repl:false})
